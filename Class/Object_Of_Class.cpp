@@ -1,32 +1,33 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-class Student{
+class Student
+{
 
-    public:
-
+public:
     char name[101];
-    int id;
     int roll;
+    int id;
 };
 
-int main(){
-
+int main()
+{
     #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
     #endif
-
-    Student student1, student2;
-    cin.getline(student1.name,101);
-    cin >> student1.id >> student1.roll;
+    
+    Student Araf,Toqi;
+    cin.getline(Araf.name,101);
+    cin >> Araf.roll >> Araf.id;
 
     cin.ignore();
 
-    cin.getline(student2.name, 101);
-    cin >> student2.id >> student2.roll;
+    cin.getline(Toqi.name,101);
+    cin >> Toqi.roll >> Toqi.id;
 
-    cout << student1.name << " " << student1.id << " " << student1.roll << endl;
-    cout << student2.name << " " << student2.id << " " << student2.roll << endl;
+    cout << "First Student's info : " << Araf.name << " " << Araf.roll << " " << Araf.id << endl;
+    cout << "Second Student's info : " << Toqi.name << " " << Toqi.roll << " " << Toqi.id << endl;
+
     return 0;
 }
