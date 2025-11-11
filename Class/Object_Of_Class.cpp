@@ -8,6 +8,7 @@ public:
     char name[101];
     int roll;
     int id;
+    
 };
 
 int main()
